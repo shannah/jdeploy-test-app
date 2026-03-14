@@ -20,6 +20,6 @@ jobs:
         run: mvn clean package -DskipTests
 
       - name: Build and Deploy Installers
-        uses: shannah/jdeploy@6.1.0-dev.4
+        uses: shannah/jdeploy@v6.1.0-dev.4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
