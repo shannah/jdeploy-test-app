@@ -6,11 +6,11 @@
 
     <groupId>com.example</groupId>
     <artifactId>jdeploy-test-app</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <packaging>jar</packaging>
 
     <name>jDeploy Test App</name>
-    <description>Test application for jDeploy publishing</description>
+    <description>Test application for jDeploy bundle publishing</description>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -37,7 +37,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
-                <version>3.6.0</version>
+                <version>3.6.1</version>
                 <executions>
                     <execution>
                         <id>copy-dependencies</id>
@@ -47,7 +47,6 @@
                         </goals>
                         <configuration>
                             <outputDirectory>${project.build.directory}/lib</outputDirectory>
-                            <includeScope>runtime</includeScope>
                         </configuration>
                     </execution>
                 </executions>

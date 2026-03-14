@@ -6,18 +6,17 @@ import java.awt.*;
 public class Main {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            JFrame frame = new JFrame("jDeploy Test App v1.0.1");
+            JFrame frame = new JFrame("jDeploy Test App v1.0.2");
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setSize(400, 300);
 
             JPanel panel = new JPanel(new BorderLayout());
-            panel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
             JLabel label = new JLabel("Hello from jDeploy Test App!", SwingConstants.CENTER);
             label.setFont(new Font("Arial", Font.BOLD, 18));
             panel.add(label, BorderLayout.CENTER);
 
-            JLabel versionLabel = new JLabel("Testing jDeploy 6.1.0-dev.4", SwingConstants.CENTER);
+            JLabel versionLabel = new JLabel("Version 1.0.2 - Bundle Publishing Test", SwingConstants.CENTER);
             versionLabel.setFont(new Font("Arial", Font.PLAIN, 12));
             panel.add(versionLabel, BorderLayout.SOUTH);
 

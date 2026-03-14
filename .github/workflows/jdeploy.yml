@@ -23,7 +23,7 @@ jobs:
         run: mvn clean package -DskipTests
 
       - name: Build and Deploy Installers
-        uses: shannah/jdeploy@v6.1.0-dev.4
+        uses: shannah/jdeploy@v6.1.0-dev.5
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          jdeploy_version: 6.1.0-dev.4
+          jdeploy_version: 6.1.0-dev.5

@@ -1,7 +1,7 @@
 {
   "name": "jdeploy-test-app",
-  "version": "1.0.1",
-  "description": "Test application for jDeploy publishing",
+  "version": "1.0.2",
+  "description": "Test application for jDeploy bundle publishing",
   "bin": {
     "jdeploy-test-app": "jdeploy-bundle/jdeploy.js"
   },
@@ -10,8 +10,16 @@
     "jdk": false,
     "javaVersion": "11",
     "javafx": false,
-    "jar": "target/jdeploy-test-app-1.0.1.jar",
-    "title": "jDeploy Test App"
+    "jar": "target/jdeploy-test-app-1.0.2.jar",
+    "title": "jDeploy Test App",
+    "artifacts": {
+      "mac-arm64": { "enabled": true },
+      "mac-x64": { "enabled": true },
+      "win-x64": { "enabled": true },
+      "win-arm64": { "enabled": true },
+      "linux-x64": { "enabled": true },
+      "linux-arm64": { "enabled": true }
+    }
   },
   "dependencies": {
     "command-exists-promise": "^2.0.2",
