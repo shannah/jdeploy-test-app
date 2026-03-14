@@ -1,0 +1,25 @@
+{
+  "name": "jdeploy-test-app",
+  "version": "1.0.0",
+  "description": "Test application for jDeploy publishing",
+  "bin": {
+    "jdeploy-test-app": "jdeploy-bundle/jdeploy.js"
+  },
+  "preferGlobal": true,
+  "jdeploy": {
+    "jdk": false,
+    "javaVersion": "11",
+    "javafx": false,
+    "jar": "target/jdeploy-test-app-1.0.0.jar",
+    "title": "jDeploy Test App"
+  },
+  "dependencies": {
+    "command-exists-promise": "^2.0.2",
+    "node-fetch": "2.6.7",
+    "tar": "^4.4.8",
+    "yauzl": "^2.10.0",
+    "shelljs": "^0.8.4"
+  },
+  "files": ["jdeploy-bundle"],
+  "license": "ISC"
+}
