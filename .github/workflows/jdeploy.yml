@@ -26,7 +26,7 @@ jobs:
         uses: shannah/jdeploy@claude/add-authenticode-signing-R6YwK
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          jdeploy_version: 6.1.0-dev.11
+          jdeploy_version: 6.1.0-dev.12
           win_signing_certificate: ${{ secrets.WIN_SIGNING_CERT_BASE64 }}
           win_signing_password: ${{ secrets.WIN_SIGNING_PASSWORD }}
           win_signing_description: "jDeploy Test App"
