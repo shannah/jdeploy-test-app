@@ -1,6 +1,6 @@
 {
   "name": "jdeploy-test-app",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Test application for jDeploy bundle publishing",
   "bin": {
     "jdeploy-test-app": "jdeploy-bundle/jdeploy.js"
@@ -10,7 +10,7 @@
     "jdk": false,
     "javaVersion": "11",
     "javafx": false,
-    "jar": "target/jdeploy-test-app-1.0.9.jar",
+    "jar": "target/jdeploy-test-app-1.0.10.jar",
     "title": "jDeploy Test App",
     "artifacts": {
       "mac-arm64": { "enabled": true },
