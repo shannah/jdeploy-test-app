@@ -22,95 +22,12 @@ jobs:
       - name: Build with Maven
         run: mvn clean package -DskipTests
 
-      - name: Install SoftHSM2
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y softhsm2 opensc
-
-      - name: Initialize SoftHSM token and import signing key
-        run: |
-          # Create SoftHSM directories
-          mkdir -p $HOME/softhsm/tokens
-
-          # Create SoftHSM config with actual path
-          cat > $HOME/softhsm/softhsm2.conf << EOF
-          directories.tokendir = $HOME/softhsm/tokens
-          objectstore.backend = file
-          log.level = INFO
-          EOF
-
-          export SOFTHSM2_CONF=$HOME/softhsm/softhsm2.conf
-
-          # Initialize the token
-          softhsm2-util --init-token --slot 0 --label "jdeploy-test" --pin 1234 --so-pin 5678
-
-          # Generate a key pair AND self-signed certificate with OpenSSL
-          openssl req -x509 -newkey rsa:2048 \
-            -keyout $HOME/softhsm/signing-key.pem \
-            -out $HOME/softhsm/signing-cert.pem \
-            -days 365 -nodes \
-            -subj "/CN=jDeploy Test PKCS11/O=jDeploy Test/C=US"
-
-          # Create a PKCS#12 file containing both key and cert for import
-          openssl pkcs12 -export \
-            -inkey $HOME/softhsm/signing-key.pem \
-            -in $HOME/softhsm/signing-cert.pem \
-            -out $HOME/softhsm/signing.p12 \
-            -passout pass:temp123 \
-            -name "signing-key"
-
-          # Import the PKCS#12 (key + cert) into the HSM
-          pkcs11-tool --module /usr/lib/softhsm/libsofthsm2.so \
-            --login --pin 1234 \
-            --write-object $HOME/softhsm/signing.p12 \
-            --type privkey --id 01 --label "signing-key" \
-            2>/dev/null || true
-
-          # Alternative: Import key and cert separately using softhsm2-util
-          # Convert private key to DER
-          openssl rsa -in $HOME/softhsm/signing-key.pem -outform DER -out $HOME/softhsm/signing-key.der
-
-          # Convert certificate to DER
-          openssl x509 -in $HOME/softhsm/signing-cert.pem -outform DER -out $HOME/softhsm/signing-cert.der
-
-          # Import private key
-          pkcs11-tool --module /usr/lib/softhsm/libsofthsm2.so \
-            --login --pin 1234 \
-            --write-object $HOME/softhsm/signing-key.der \
-            --type privkey --id 01 --label "signing-key"
-
-          # Import certificate
-          pkcs11-tool --module /usr/lib/softhsm/libsofthsm2.so \
-            --login --pin 1234 \
-            --write-object $HOME/softhsm/signing-cert.der \
-            --type cert --id 01 --label "signing-key"
-
-          # List objects to verify
-          echo "=== Objects in token ==="
-          pkcs11-tool --module /usr/lib/softhsm/libsofthsm2.so \
-            --login --pin 1234 \
-            --list-objects
-
-          # Create PKCS#11 config file for jsign
-          cat > $HOME/softhsm/pkcs11.cfg << EOF
-          name = SoftHSM
-          library = /usr/lib/softhsm/libsofthsm2.so
-          slotListIndex = 0
-          EOF
-
-          echo "PKCS11_CONFIG=$HOME/softhsm/pkcs11.cfg" >> $GITHUB_ENV
-          echo "SOFTHSM2_CONF=$HOME/softhsm/softhsm2.conf" >> $GITHUB_ENV
-
       - name: Build and Deploy Installers
         uses: shannah/jdeploy@claude/add-authenticode-signing-R6YwK
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           jdeploy_version: 6.1.0-dev.12
-          win_signing_keystore_type: PKCS11
-          win_signing_pkcs11_config: ${{ env.PKCS11_CONFIG }}
-          win_signing_password: "1234"
-          win_signing_key_alias: "signing-key"
-          win_signing_description: "jDeploy Test App (PKCS#11)"
+          win_signing_certificate: ${{ secrets.WIN_SIGNING_CERT_BASE64 }}
+          win_signing_password: ${{ secrets.WIN_SIGNING_PASSWORD }}
+          win_signing_description: "jDeploy Test App"
           win_signing_url: "https://github.com/shannah/jdeploy-test-app"
-        env:
-          SOFTHSM2_CONF: ${{ env.SOFTHSM2_CONF }}
