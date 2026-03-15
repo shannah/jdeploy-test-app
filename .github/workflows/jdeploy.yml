@@ -27,7 +27,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y softhsm2 opensc
 
-      - name: Initialize SoftHSM token and create signing key
+      - name: Initialize SoftHSM token and import signing key
         run: |
           # Create SoftHSM directories
           mkdir -p $HOME/softhsm/tokens
@@ -44,27 +44,52 @@ jobs:
           # Initialize the token
           softhsm2-util --init-token --slot 0 --label "jdeploy-test" --pin 1234 --so-pin 5678
 
-          # Generate a key pair in the token
-          pkcs11-tool --module /usr/lib/softhsm/libsofthsm2.so \
-            --login --pin 1234 \
-            --keypairgen --key-type rsa:2048 \
-            --id 01 --label "signing-key"
-
-          # Generate a self-signed certificate using OpenSSL
+          # Generate a key pair AND self-signed certificate with OpenSSL
           openssl req -x509 -newkey rsa:2048 \
-            -keyout $HOME/softhsm/temp-key.pem \
-            -out $HOME/softhsm/cert.pem \
+            -keyout $HOME/softhsm/signing-key.pem \
+            -out $HOME/softhsm/signing-cert.pem \
             -days 365 -nodes \
             -subj "/CN=jDeploy Test PKCS11/O=jDeploy Test/C=US"
 
-          # Convert certificate to DER format for import
-          openssl x509 -in $HOME/softhsm/cert.pem -outform DER -out $HOME/softhsm/cert.der
+          # Create a PKCS#12 file containing both key and cert for import
+          openssl pkcs12 -export \
+            -inkey $HOME/softhsm/signing-key.pem \
+            -in $HOME/softhsm/signing-cert.pem \
+            -out $HOME/softhsm/signing.p12 \
+            -passout pass:temp123 \
+            -name "signing-key"
 
-          # Import the certificate into the token
+          # Import the PKCS#12 (key + cert) into the HSM
           pkcs11-tool --module /usr/lib/softhsm/libsofthsm2.so \
             --login --pin 1234 \
-            --write-object $HOME/softhsm/cert.der \
-            --type cert --id 01 --label "signing-cert"
+            --write-object $HOME/softhsm/signing.p12 \
+            --type privkey --id 01 --label "signing-key" \
+            2>/dev/null || true
+
+          # Alternative: Import key and cert separately using softhsm2-util
+          # Convert private key to DER
+          openssl rsa -in $HOME/softhsm/signing-key.pem -outform DER -out $HOME/softhsm/signing-key.der
+
+          # Convert certificate to DER
+          openssl x509 -in $HOME/softhsm/signing-cert.pem -outform DER -out $HOME/softhsm/signing-cert.der
+
+          # Import private key
+          pkcs11-tool --module /usr/lib/softhsm/libsofthsm2.so \
+            --login --pin 1234 \
+            --write-object $HOME/softhsm/signing-key.der \
+            --type privkey --id 01 --label "signing-key"
+
+          # Import certificate
+          pkcs11-tool --module /usr/lib/softhsm/libsofthsm2.so \
+            --login --pin 1234 \
+            --write-object $HOME/softhsm/signing-cert.der \
+            --type cert --id 01 --label "signing-key"
+
+          # List objects to verify
+          echo "=== Objects in token ==="
+          pkcs11-tool --module /usr/lib/softhsm/libsofthsm2.so \
+            --login --pin 1234 \
+            --list-objects
 
           # Create PKCS#11 config file for jsign
           cat > $HOME/softhsm/pkcs11.cfg << EOF
