@@ -32,9 +32,9 @@ jobs:
           # Create SoftHSM directories
           mkdir -p $HOME/softhsm/tokens
 
-          # Create SoftHSM config
-          cat > $HOME/softhsm/softhsm2.conf << 'EOF'
-          directories.tokendir = $ENV:HOME/softhsm/tokens
+          # Create SoftHSM config with actual path
+          cat > $HOME/softhsm/softhsm2.conf << EOF
+          directories.tokendir = $HOME/softhsm/tokens
           objectstore.backend = file
           log.level = INFO
           EOF
