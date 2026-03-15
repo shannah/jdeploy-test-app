@@ -6,7 +6,7 @@ import java.awt.*;
 public class Main {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
-            JFrame frame = new JFrame("jDeploy Test App v1.0.7");
+            JFrame frame = new JFrame("jDeploy Test App v1.0.8");
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setSize(400, 300);
 
@@ -16,7 +16,7 @@ public class Main {
             label.setFont(new Font("Arial", Font.BOLD, 18));
             panel.add(label, BorderLayout.CENTER);
 
-            JLabel versionLabel = new JLabel("Version 1.0.7 - Bundle Publishing Test", SwingConstants.CENTER);
+            JLabel versionLabel = new JLabel("Version 1.0.8 - Authenticode Signing Test", SwingConstants.CENTER);
             versionLabel.setFont(new Font("Arial", Font.PLAIN, 12));
             panel.add(versionLabel, BorderLayout.SOUTH);
 
