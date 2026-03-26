@@ -23,11 +23,7 @@ jobs:
         run: mvn clean package -DskipTests
 
       - name: Build and Deploy Installers
-        uses: shannah/jdeploy@claude/add-authenticode-signing-04qdh
+        uses: shannah/jdeploy@v6.1.2-dev.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          jdeploy_version: 6.1.1
-          win_signing_certificate: ${{ secrets.WIN_SIGNING_CERT_BASE64 }}
-          win_signing_password: ${{ secrets.WIN_SIGNING_PASSWORD }}
-          win_signing_description: "jDeploy Test App"
-          win_signing_url: "https://github.com/shannah/jdeploy-test-app"
+          jdeploy_version: 6.1.2-dev.0

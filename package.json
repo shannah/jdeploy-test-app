@@ -1,7 +1,7 @@
 {
   "name": "jdeploy-test-app",
-  "version": "1.0.16",
-  "description": "Test application for jDeploy bundle publishing",
+  "version": "1.0.17",
+  "description": "Test application for jDeploy publishing",
   "bin": {
     "jdeploy-test-app": "jdeploy-bundle/jdeploy.js"
   },
@@ -10,17 +10,8 @@
     "jdk": false,
     "javaVersion": "11",
     "javafx": false,
-    "jar": "target/jdeploy-test-app-1.0.16.jar",
-    "title": "jDeploy Test App",
-    "winAppDir": "AppData\\Local\\Programs",
-    "artifacts": {
-      "mac-arm64": { "enabled": true },
-      "mac-x64": { "enabled": true },
-      "win-x64": { "enabled": true },
-      "win-arm64": { "enabled": true },
-      "linux-x64": { "enabled": true },
-      "linux-arm64": { "enabled": true }
-    }
+    "jar": "target/jdeploy-test-app-1.0.17.jar",
+    "title": "jDeploy Test App"
   },
   "dependencies": {
     "command-exists-promise": "^2.0.2",
