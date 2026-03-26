@@ -1,6 +1,6 @@
 {
   "name": "jdeploy-test-app",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "Test application for jDeploy publishing",
   "bin": {
     "jdeploy-test-app": "jdeploy-bundle/jdeploy.js"
@@ -10,7 +10,7 @@
     "jdk": false,
     "javaVersion": "11",
     "javafx": false,
-    "jar": "target/jdeploy-test-app-1.0.17.jar",
+    "jar": "target/jdeploy-test-app-1.0.18.jar",
     "title": "jDeploy Test App"
   },
   "dependencies": {
