@@ -3,7 +3,7 @@
 var path = require('path');
 var os = require('os');
 var jdeployHomeDir = process.env.JDEPLOY_HOME || path.join(os.homedir(), '.jdeploy');
-var jarName = "jdeploy-test-app-1.0.18.jar";
+var jarName = "jdeploy-test-app-1.0.19.jar";
 var mainClass = "{{MAIN_CLASS}}";
 var classPath = "{{CLASSPATH}}";
 var port = "0";
