@@ -1,0 +1,1062 @@
+{
+  "versions": {
+    "1.0.13": {
+      "license": "ISC",
+      "bin": {"jdeploy-test-app": "jdeploy-bundle/jdeploy.js"},
+      "name": "jdeploy-test-app",
+      "description": "Test application for jDeploy bundle publishing",
+      "files": ["jdeploy-bundle"],
+      "preferGlobal": true,
+      "source": "https://github.com/shannah/jdeploy-test-app",
+      "version": "1.0.13",
+      "jdeploy": {
+        "jdk": false,
+        "checksums": {},
+        "mainClass": "com.example.testapp.Main",
+        "javaVersion": "11",
+        "gitTag": "v1.0.13",
+        "jar": "target/jdeploy-test-app-1.0.13.jar",
+        "javafx": false,
+        "jdeployVersion": "6.1.0-dev.12",
+        "title": "jDeploy Test App",
+        "commitHash": "173a2c5637b170013b584072568f64cc856ebc38",
+        "artifacts": {
+          "linux-x64": {
+            "sha256": "96cf0763f309dc22b6e903a3b3bd788bb5d9293abc6e7c16e9fbf5a8a77093d7",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.13/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-linux-x64-1.0.13.tar.gz"
+          },
+          "win-x64": {
+            "sha256": "ede693cbd2a30f85b7a3d38392ca29ab25872d7ba063161886ce3b6fc0ec4572",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.13/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-win-x64-1.0.13.tar.gz"
+          },
+          "win-arm64": {
+            "sha256": "0d706b56aabc5814f033ab35f4949acfa4008b370db90ec756d1145aeaa08da5",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.13/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-win-arm64-1.0.13.tar.gz"
+          },
+          "mac-arm64": {
+            "sha256": "b6483bbb5a58bf270f0e2d659ad45a99920038a72001154ea0221518768bbccd",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.13/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-mac-arm64-1.0.13.tar.gz"
+          },
+          "mac-x64": {
+            "sha256": "ef523ccbe9a6862a9c27b5a621c436cfe1540646bc59aa7503917fea760d6da5",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.13/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-mac-x64-1.0.13.tar.gz"
+          },
+          "linux-arm64": {
+            "sha256": "142b88d2a13850388f0236568b1919eb722564b40adcf3cbd53df0d23bbd8bed",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.13/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-linux-arm64-1.0.13.tar.gz"
+          }
+        }
+      },
+      "dependencies": {
+        "command-exists-promise": "^2.0.2",
+        "node-fetch": "2.6.7",
+        "tar": "^4.4.8",
+        "yauzl": "^2.10.0",
+        "shelljs": "^0.8.4"
+      }
+    },
+    "1.0.14": {
+      "license": "ISC",
+      "bin": {"jdeploy-test-app": "jdeploy-bundle/jdeploy.js"},
+      "name": "jdeploy-test-app",
+      "description": "Test application for jDeploy bundle publishing",
+      "files": ["jdeploy-bundle"],
+      "preferGlobal": true,
+      "source": "https://github.com/shannah/jdeploy-test-app",
+      "version": "1.0.14",
+      "jdeploy": {
+        "jdk": false,
+        "checksums": {},
+        "mainClass": "com.example.testapp.Main",
+        "javaVersion": "11",
+        "gitTag": "v1.0.14",
+        "jar": "target/jdeploy-test-app-1.0.14.jar",
+        "javafx": false,
+        "jdeployVersion": "6.1.0-dev.12",
+        "title": "jDeploy Test App",
+        "commitHash": "8ccd09237e7c8bd65efcc6f9ce1c95407e4aee8b",
+        "artifacts": {
+          "linux-x64": {
+            "sha256": "38a13b2e36a176549227ac5a67e0a48ed9c808179946efc89cb9c93dc5a09303",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.14/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-linux-x64-1.0.14.tar.gz"
+          },
+          "win-x64": {
+            "sha256": "f437c6c8b770a8caffce82b2ffcadfaff6906da3b7321cb88373d8c743ac99cd",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.14/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-win-x64-1.0.14.tar.gz"
+          },
+          "win-arm64": {
+            "sha256": "094145f59d4eb5c07643cc2725778d0080d8e7e50e9f42c5c394b149cb310206",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.14/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-win-arm64-1.0.14.tar.gz"
+          },
+          "mac-arm64": {
+            "sha256": "b5dc33360090e33b346f808322884c3fc4836e88929d8bc8312b76d6ec9eb881",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.14/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-mac-arm64-1.0.14.tar.gz"
+          },
+          "mac-x64": {
+            "sha256": "5745fd45b06f2c9d355fc96fbcba9cc68ef551f121ce5ea521d857b1b2bfd9d6",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.14/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-mac-x64-1.0.14.tar.gz"
+          },
+          "linux-arm64": {
+            "sha256": "c87a6a9285c49885784be5dda8849d0b4c89711c6581fb7afb51f9456e8ac78f",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.14/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-linux-arm64-1.0.14.tar.gz"
+          }
+        }
+      },
+      "dependencies": {
+        "command-exists-promise": "^2.0.2",
+        "node-fetch": "2.6.7",
+        "tar": "^4.4.8",
+        "yauzl": "^2.10.0",
+        "shelljs": "^0.8.4"
+      }
+    },
+    "1.0.15": {
+      "license": "ISC",
+      "bin": {"jdeploy-test-app": "jdeploy-bundle/jdeploy.js"},
+      "name": "jdeploy-test-app",
+      "description": "Test application for jDeploy bundle publishing",
+      "files": ["jdeploy-bundle"],
+      "preferGlobal": true,
+      "source": "https://github.com/shannah/jdeploy-test-app",
+      "version": "1.0.15",
+      "jdeploy": {
+        "jdk": false,
+        "checksums": {},
+        "mainClass": "com.example.testapp.Main",
+        "javaVersion": "11",
+        "gitTag": "v1.0.15",
+        "winAppDir": "AppData\\Local\\Programs",
+        "jar": "target/jdeploy-test-app-1.0.15.jar",
+        "javafx": false,
+        "jdeployVersion": "6.1.0-dev.12",
+        "title": "jDeploy Test App",
+        "commitHash": "e5c93302e2a86159d4ee2056abb1833627d30c26",
+        "artifacts": {
+          "linux-x64": {
+            "sha256": "3785163f210675756219ac9904fa4adcbf93b8abe79657d1231f2c160b970bf9",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.15/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-linux-x64-1.0.15.tar.gz"
+          },
+          "win-x64": {
+            "sha256": "ced3e9e98916d2b9efee258e425630e7343fcfae8a5eae776f9c3d6e5f8c032b",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.15/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-win-x64-1.0.15.tar.gz"
+          },
+          "win-arm64": {
+            "sha256": "eec88ca9d6dac2d6632c613f394ca06ceb14e9be5dbcc21f6c77847f81cd370d",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.15/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-win-arm64-1.0.15.tar.gz"
+          },
+          "mac-arm64": {
+            "sha256": "926fdc66ea545e0b53117d75e51d8bca9bc5463deef7a966106e1adb07f5ef8c",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.15/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-mac-arm64-1.0.15.tar.gz"
+          },
+          "mac-x64": {
+            "sha256": "e1e18013daa911ba576356210cd77c05429a531afc9ed95cea95dd779c2bc134",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.15/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-mac-x64-1.0.15.tar.gz"
+          },
+          "linux-arm64": {
+            "sha256": "16a87f10eba8b1be5f12c9f9dd871bf664a9bbc1fd80fb171f42ab4b719fdd72",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.15/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-linux-arm64-1.0.15.tar.gz"
+          }
+        }
+      },
+      "dependencies": {
+        "command-exists-promise": "^2.0.2",
+        "node-fetch": "2.6.7",
+        "tar": "^4.4.8",
+        "yauzl": "^2.10.0",
+        "shelljs": "^0.8.4"
+      }
+    },
+    "1.0.20": {
+      "license": "ISC",
+      "bin": {"jdeploy-test-app": "jdeploy-bundle/jdeploy.js"},
+      "name": "jdeploy-test-app",
+      "description": "Test application for jDeploy publishing",
+      "files": ["jdeploy-bundle"],
+      "preferGlobal": true,
+      "source": "https://github.com/shannah/jdeploy-test-app",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/shannah/jdeploy-test-app.git"
+      },
+      "version": "1.0.20",
+      "jdeploy": {
+        "jdk": false,
+        "checksums": {},
+        "mainClass": "com.example.testapp.Main",
+        "publishTargets": [{
+          "name": "github: shannah/jdeploy-test-app",
+          "type": "GITHUB",
+          "url": "https://github.com/shannah/jdeploy-test-app"
+        }],
+        "javaVersion": "11",
+        "jar": "target/jdeploy-test-app-1.0.20.jar",
+        "appUpdateMode": "prompt",
+        "javafx": false,
+        "title": "jDeploy Test App"
+      },
+      "dependencies": {
+        "command-exists-promise": "^2.0.2",
+        "node-fetch": "2.6.7",
+        "tar": "^4.4.8",
+        "yauzl": "^2.10.0",
+        "shelljs": "^0.8.4"
+      }
+    },
+    "1.0.10": {
+      "license": "ISC",
+      "bin": {"jdeploy-test-app": "jdeploy-bundle/jdeploy.js"},
+      "name": "jdeploy-test-app",
+      "description": "Test application for jDeploy bundle publishing",
+      "files": ["jdeploy-bundle"],
+      "preferGlobal": true,
+      "source": "https://github.com/shannah/jdeploy-test-app",
+      "version": "1.0.10",
+      "jdeploy": {
+        "jdk": false,
+        "checksums": {},
+        "mainClass": "com.example.testapp.Main",
+        "javaVersion": "11",
+        "gitTag": "v1.0.10",
+        "jar": "target/jdeploy-test-app-1.0.10.jar",
+        "javafx": false,
+        "jdeployVersion": "6.1.0-dev.11",
+        "title": "jDeploy Test App",
+        "commitHash": "e1f77ddf373a8064013a049cd8a7a8ddde22849d",
+        "artifacts": {
+          "linux-x64": {
+            "sha256": "b78e4956e4b3a1463d282c1797fd036600c00c1ecf8a31c6fe04d2b2a882b3fc",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.10/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-linux-x64-1.0.10.tar.gz"
+          },
+          "win-x64": {
+            "sha256": "9d939ff67196069c35be6583f4f9c8a7812b73750a1692f57fa1e9147f3af8cb",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.10/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-win-x64-1.0.10.tar.gz"
+          },
+          "win-arm64": {
+            "sha256": "5fcd52e7c91b348aa81d6e87452ac7913b5ee5a7cf1ba048ae92785a4c9bea87",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.10/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-win-arm64-1.0.10.tar.gz"
+          },
+          "mac-arm64": {
+            "sha256": "f8e597580ec200f10af700d9c2a8b0803f8f0d958c774aa7bb527cb0676ef3e0",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.10/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-mac-arm64-1.0.10.tar.gz"
+          },
+          "mac-x64": {
+            "sha256": "6c10c13ab37e49f7356ec527fc83aaed6327a040340be81570fb2e050091f5f5",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.10/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-mac-x64-1.0.10.tar.gz"
+          },
+          "linux-arm64": {
+            "sha256": "d9c4de42a66978fdcd0b619acbd38a6a2eb16448454a3fb84d46462ce85e5b91",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.10/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-linux-arm64-1.0.10.tar.gz"
+          }
+        }
+      },
+      "dependencies": {
+        "command-exists-promise": "^2.0.2",
+        "node-fetch": "2.6.7",
+        "tar": "^4.4.8",
+        "yauzl": "^2.10.0",
+        "shelljs": "^0.8.4"
+      }
+    },
+    "1.0.11": {
+      "license": "ISC",
+      "bin": {"jdeploy-test-app": "jdeploy-bundle/jdeploy.js"},
+      "name": "jdeploy-test-app",
+      "description": "Test application for jDeploy bundle publishing",
+      "files": ["jdeploy-bundle"],
+      "preferGlobal": true,
+      "source": "https://github.com/shannah/jdeploy-test-app",
+      "version": "1.0.11",
+      "jdeploy": {
+        "jdk": false,
+        "checksums": {},
+        "mainClass": "com.example.testapp.Main",
+        "javaVersion": "11",
+        "gitTag": "v1.0.11",
+        "jar": "target/jdeploy-test-app-1.0.11.jar",
+        "javafx": false,
+        "jdeployVersion": "6.1.0-dev.12",
+        "title": "jDeploy Test App",
+        "commitHash": "58642fe328f5193a9a4c4c004956cb2a353811b2",
+        "artifacts": {
+          "linux-x64": {
+            "sha256": "f7a39f779d42935a3a771983af0e706eed0cfd2889f9cbfee0478b317d9da921",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.11/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-linux-x64-1.0.11.tar.gz"
+          },
+          "win-x64": {
+            "sha256": "bb3384ddfefe37cb71e696ae90a10dd9a08101adfb0836f30c130edbcb7d8197",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.11/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-win-x64-1.0.11.tar.gz"
+          },
+          "win-arm64": {
+            "sha256": "0d4333f5e4ec26bebd831b0cdbf5d66416cfaf5cc233e9d04059a63af3cc7e7d",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.11/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-win-arm64-1.0.11.tar.gz"
+          },
+          "mac-arm64": {
+            "sha256": "77d626d582ed5c625fb894f599e26ea0b73afe459deeb271e39a9526c168235f",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.11/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-mac-arm64-1.0.11.tar.gz"
+          },
+          "mac-x64": {
+            "sha256": "de454676eedb92cef59b282f78ba40fc40106b3512fabb52cdfe06ff127f0424",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.11/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-mac-x64-1.0.11.tar.gz"
+          },
+          "linux-arm64": {
+            "sha256": "4c71417acf30b72614fdc157e346070ff40e14ddb4326e4c77d9d959f3b600a3",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.11/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-linux-arm64-1.0.11.tar.gz"
+          }
+        }
+      },
+      "dependencies": {
+        "command-exists-promise": "^2.0.2",
+        "node-fetch": "2.6.7",
+        "tar": "^4.4.8",
+        "yauzl": "^2.10.0",
+        "shelljs": "^0.8.4"
+      }
+    },
+    "1.0.3": {
+      "license": "ISC",
+      "bin": {"jdeploy-test-app": "jdeploy-bundle/jdeploy.js"},
+      "name": "jdeploy-test-app",
+      "description": "Test application for jDeploy bundle publishing",
+      "files": ["jdeploy-bundle"],
+      "preferGlobal": true,
+      "source": "https://github.com/shannah/jdeploy-test-app",
+      "version": "1.0.3",
+      "jdeploy": {
+        "jdk": false,
+        "checksums": {},
+        "mainClass": "com.example.testapp.Main",
+        "javaVersion": "11",
+        "gitTag": "v1.0.3",
+        "jar": "target/jdeploy-test-app-1.0.3.jar",
+        "javafx": false,
+        "jdeployVersion": "6.1.0-dev.6",
+        "title": "jDeploy Test App",
+        "commitHash": "7abd26af3ed3b4202bb3e4b6258073650b064e3c",
+        "artifacts": {
+          "linux-x64": {"enabled": true},
+          "win-x64": {"enabled": true},
+          "win-arm64": {"enabled": true},
+          "mac-arm64": {"enabled": true},
+          "mac-x64": {"enabled": true},
+          "linux-arm64": {"enabled": true}
+        }
+      },
+      "dependencies": {
+        "command-exists-promise": "^2.0.2",
+        "node-fetch": "2.6.7",
+        "tar": "^4.4.8",
+        "yauzl": "^2.10.0",
+        "shelljs": "^0.8.4"
+      }
+    },
+    "1.0.4": {
+      "license": "ISC",
+      "bin": {"jdeploy-test-app": "jdeploy-bundle/jdeploy.js"},
+      "name": "jdeploy-test-app",
+      "description": "Test application for jDeploy bundle publishing",
+      "files": ["jdeploy-bundle"],
+      "preferGlobal": true,
+      "source": "https://github.com/shannah/jdeploy-test-app",
+      "version": "1.0.4",
+      "jdeploy": {
+        "jdk": false,
+        "checksums": {},
+        "mainClass": "com.example.testapp.Main",
+        "javaVersion": "11",
+        "gitTag": "v1.0.4",
+        "jar": "target/jdeploy-test-app-1.0.4.jar",
+        "javafx": false,
+        "jdeployVersion": "6.1.0-dev.7",
+        "title": "jDeploy Test App",
+        "commitHash": "bdba3e0c2f55f117a945175c7b9f523311ddb76a",
+        "artifacts": {
+          "linux-x64": {
+            "sha256": "75d537cc388ed2bf315babd2a9fe70858356433bd003abbb2bfc4089f233eb71",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/1.0.4/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-linux-x64-1.0.4.jar"
+          },
+          "win-x64": {
+            "sha256": "bbde37e820bff0cccc69c14abf6bcc3d0918e96c30f5e1265976b5a494cdfa88",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/1.0.4/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-win-x64-1.0.4.jar"
+          },
+          "win-arm64": {
+            "sha256": "0005740158462c497dfe964bdbadd13cdb85003b34d62a8e27d439232813b476",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/1.0.4/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-win-arm64-1.0.4.jar"
+          },
+          "mac-arm64": {
+            "sha256": "975bb6141b1c528358965a8015ad737ccd042a3cec681a7793b660a22b2b7275",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/1.0.4/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-mac-arm64-1.0.4.jar"
+          },
+          "mac-x64": {
+            "sha256": "9e6ea3121d532e75e09e341a67e64930402d3ae3323b139cbff18f2cf1eaef26",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/1.0.4/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-mac-x64-1.0.4.jar"
+          },
+          "linux-arm64": {
+            "sha256": "0ff68ac403c305845252ae1bbaa23645fff73d9f4c1b9547850158322f93e77b",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/1.0.4/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-linux-arm64-1.0.4.jar"
+          }
+        }
+      },
+      "dependencies": {
+        "command-exists-promise": "^2.0.2",
+        "node-fetch": "2.6.7",
+        "tar": "^4.4.8",
+        "yauzl": "^2.10.0",
+        "shelljs": "^0.8.4"
+      }
+    },
+    "1.0.5": {
+      "license": "ISC",
+      "bin": {"jdeploy-test-app": "jdeploy-bundle/jdeploy.js"},
+      "name": "jdeploy-test-app",
+      "description": "Test application for jDeploy bundle publishing",
+      "files": ["jdeploy-bundle"],
+      "preferGlobal": true,
+      "source": "https://github.com/shannah/jdeploy-test-app",
+      "version": "1.0.5",
+      "jdeploy": {
+        "jdk": false,
+        "checksums": {},
+        "mainClass": "com.example.testapp.Main",
+        "javaVersion": "11",
+        "gitTag": "v1.0.5",
+        "jar": "target/jdeploy-test-app-1.0.5.jar",
+        "javafx": false,
+        "jdeployVersion": "6.1.0-dev.8",
+        "title": "jDeploy Test App",
+        "commitHash": "7ca0eafd3f8776c0f578690b17c93a3859c888ae",
+        "artifacts": {
+          "linux-x64": {
+            "sha256": "e2a3b81d4b2ff0e58ffc8c9f7f653c7b5e5a62a7b619a3c1f3235f5532f79a9d",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.5/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-linux-x64-1.0.5.jar"
+          },
+          "win-x64": {
+            "sha256": "f613a6f4af56e348658cdf53e5ccb801d52d534e214c8168a60a09cc45f38842",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.5/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-win-x64-1.0.5.jar"
+          },
+          "win-arm64": {
+            "sha256": "f203f17a2f87c7d33de2cf07090ac419c3f7598cc5e6fb01bf2144fb1fac62c0",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.5/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-win-arm64-1.0.5.jar"
+          },
+          "mac-arm64": {
+            "sha256": "afa0a91be9c664432d5198585023f1e3f68ad50d93c63276ac5561304083bfb3",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.5/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-mac-arm64-1.0.5.jar"
+          },
+          "mac-x64": {
+            "sha256": "b3e50585671deb6788644abb3c10f80509bc7a5b9fd55c835488ce5baefab7c8",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.5/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-mac-x64-1.0.5.jar"
+          },
+          "linux-arm64": {
+            "sha256": "04045f8dee9673abcaf512590a434a73e9b2026c741945112dc94df78d41b67a",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.5/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-linux-arm64-1.0.5.jar"
+          }
+        }
+      },
+      "dependencies": {
+        "command-exists-promise": "^2.0.2",
+        "node-fetch": "2.6.7",
+        "tar": "^4.4.8",
+        "yauzl": "^2.10.0",
+        "shelljs": "^0.8.4"
+      }
+    },
+    "1.0.6": {
+      "license": "ISC",
+      "bin": {"jdeploy-test-app": "jdeploy-bundle/jdeploy.js"},
+      "name": "jdeploy-test-app",
+      "description": "Test application for jDeploy bundle publishing",
+      "files": ["jdeploy-bundle"],
+      "preferGlobal": true,
+      "source": "https://github.com/shannah/jdeploy-test-app",
+      "version": "1.0.6",
+      "jdeploy": {
+        "jdk": false,
+        "checksums": {},
+        "mainClass": "com.example.testapp.Main",
+        "javaVersion": "11",
+        "gitTag": "v1.0.6",
+        "jar": "target/jdeploy-test-app-1.0.6.jar",
+        "javafx": false,
+        "jdeployVersion": "6.1.0-dev.9",
+        "title": "jDeploy Test App",
+        "commitHash": "3b8d8270b3aa7f63baf67bdc7f0634aa95a6b942",
+        "artifacts": {
+          "linux-x64": {
+            "sha256": "55c2ab5a79579e9910fc0f7f000741b4568a9f0c608cb1f22dbfc076dd87a87e",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.6/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-linux-x64-1.0.6.jar"
+          },
+          "win-x64": {
+            "sha256": "a5fb6c15eb4db8427fe7dc4d78b2e0aa84f245b1bf514af5f4fc91d082f90eac",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.6/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-win-x64-1.0.6.jar"
+          },
+          "win-arm64": {
+            "sha256": "712ca0d537f0183e4a2853c16c57bd95fea91f37248ed8f56be63a6f3cf37899",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.6/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-win-arm64-1.0.6.jar"
+          },
+          "mac-arm64": {
+            "sha256": "35b22247653311c8eea8b2f52ca03b1adfda334006ec71c454014ce613c0471d",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.6/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-mac-arm64-1.0.6.jar"
+          },
+          "mac-x64": {
+            "sha256": "8b5ef1e1cdcfc9345bb1cee32fe1f9c2fef1bbbf133bd7f6cae1388de1c84f45",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.6/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-mac-x64-1.0.6.jar"
+          },
+          "linux-arm64": {
+            "sha256": "d8bfe03b34a5be6c62910135a5ffed00b0987bdd24590c16971e7d4d98a46fec",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.6/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-linux-arm64-1.0.6.jar"
+          }
+        }
+      },
+      "dependencies": {
+        "command-exists-promise": "^2.0.2",
+        "node-fetch": "2.6.7",
+        "tar": "^4.4.8",
+        "yauzl": "^2.10.0",
+        "shelljs": "^0.8.4"
+      }
+    },
+    "1.0.7": {
+      "license": "ISC",
+      "bin": {"jdeploy-test-app": "jdeploy-bundle/jdeploy.js"},
+      "name": "jdeploy-test-app",
+      "description": "Test application for jDeploy bundle publishing",
+      "files": ["jdeploy-bundle"],
+      "preferGlobal": true,
+      "source": "https://github.com/shannah/jdeploy-test-app",
+      "version": "1.0.7",
+      "jdeploy": {
+        "jdk": false,
+        "checksums": {},
+        "mainClass": "com.example.testapp.Main",
+        "javaVersion": "11",
+        "gitTag": "v1.0.7",
+        "jar": "target/jdeploy-test-app-1.0.7.jar",
+        "javafx": false,
+        "jdeployVersion": "6.1.0-dev.10",
+        "title": "jDeploy Test App",
+        "commitHash": "dfafb7e90712201b11382af00b5f9275cc6ddc5a",
+        "artifacts": {
+          "linux-x64": {
+            "sha256": "2e79887d54c616b6da88de5479a31a5c9c5a94e46338e21630a4d78c086c7abc",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.7/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-linux-x64-1.0.7.tar.gz"
+          },
+          "win-x64": {
+            "sha256": "0017b86f85dcb18c59bd38e4c10318709ae2267ffade4011131dd051ca887a79",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.7/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-win-x64-1.0.7.tar.gz"
+          },
+          "win-arm64": {
+            "sha256": "3809fb8eefcbb283e399b378fd172822d900a873526e93bd776cdb36a9c40d45",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.7/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-win-arm64-1.0.7.tar.gz"
+          },
+          "mac-arm64": {
+            "sha256": "251ff5a7f935c6ce9eefb41ea8e67ae20ae46b406a279c73f514cf1d284ef57c",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.7/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-mac-arm64-1.0.7.tar.gz"
+          },
+          "mac-x64": {
+            "sha256": "ffbab3443878a7cf27711ebe8ba400f9f4664551cea32e8c59354c2ee479e5b1",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.7/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-mac-x64-1.0.7.tar.gz"
+          },
+          "linux-arm64": {
+            "sha256": "29a6cf6570cbcf4736de5cb8559ee7767d979f37f6781c9e010fc41951e64273",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.7/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-linux-arm64-1.0.7.tar.gz"
+          }
+        }
+      },
+      "dependencies": {
+        "command-exists-promise": "^2.0.2",
+        "node-fetch": "2.6.7",
+        "tar": "^4.4.8",
+        "yauzl": "^2.10.0",
+        "shelljs": "^0.8.4"
+      }
+    },
+    "1.0.8": {
+      "license": "ISC",
+      "bin": {"jdeploy-test-app": "jdeploy-bundle/jdeploy.js"},
+      "name": "jdeploy-test-app",
+      "description": "Test application for jDeploy bundle publishing",
+      "files": ["jdeploy-bundle"],
+      "preferGlobal": true,
+      "source": "https://github.com/shannah/jdeploy-test-app",
+      "version": "1.0.8",
+      "jdeploy": {
+        "jdk": false,
+        "checksums": {},
+        "mainClass": "com.example.testapp.Main",
+        "javaVersion": "11",
+        "gitTag": "v1.0.8",
+        "jar": "target/jdeploy-test-app-1.0.8.jar",
+        "javafx": false,
+        "jdeployVersion": "6.1.0-dev.10",
+        "title": "jDeploy Test App",
+        "commitHash": "558406142fb7ab5adb4cc597201f3a066c9ceff1",
+        "artifacts": {
+          "linux-x64": {
+            "sha256": "bfed6530badc6a7a210dcef7bbfd9cf08607c012a1206c10e5c4cc199bf4fa06",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.8/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-linux-x64-1.0.8.tar.gz"
+          },
+          "win-x64": {
+            "sha256": "2bfee7064f0afdd7b6774b614b071089d9c2f402b6b4d5707981f0db3de668f3",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.8/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-win-x64-1.0.8.tar.gz"
+          },
+          "win-arm64": {
+            "sha256": "487cdd334dcfe963546744ca399dd2fbe61cc4a86f90ae1e0c8d53723af05154",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.8/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-win-arm64-1.0.8.tar.gz"
+          },
+          "mac-arm64": {
+            "sha256": "87706940e176535477f55ac09901764e3b1cc635ed2d11d58bc65e233e20841a",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.8/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-mac-arm64-1.0.8.tar.gz"
+          },
+          "mac-x64": {
+            "sha256": "0436e4b53890b07d8bd72c6de4bbe065ba480515e09f8b7abaffe6e3dc5cc335",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.8/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-mac-x64-1.0.8.tar.gz"
+          },
+          "linux-arm64": {
+            "sha256": "38bd5cc7c7fb2ef36a08173dad87f49c86490353aee859beca9a8903972a04cd",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.8/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-linux-arm64-1.0.8.tar.gz"
+          }
+        }
+      },
+      "dependencies": {
+        "command-exists-promise": "^2.0.2",
+        "node-fetch": "2.6.7",
+        "tar": "^4.4.8",
+        "yauzl": "^2.10.0",
+        "shelljs": "^0.8.4"
+      }
+    },
+    "1.0.9": {
+      "license": "ISC",
+      "bin": {"jdeploy-test-app": "jdeploy-bundle/jdeploy.js"},
+      "name": "jdeploy-test-app",
+      "description": "Test application for jDeploy bundle publishing",
+      "files": ["jdeploy-bundle"],
+      "preferGlobal": true,
+      "source": "https://github.com/shannah/jdeploy-test-app",
+      "version": "1.0.9",
+      "jdeploy": {
+        "jdk": false,
+        "checksums": {},
+        "mainClass": "com.example.testapp.Main",
+        "javaVersion": "11",
+        "gitTag": "v1.0.9",
+        "jar": "target/jdeploy-test-app-1.0.9.jar",
+        "javafx": false,
+        "jdeployVersion": "6.1.0-dev.11",
+        "title": "jDeploy Test App",
+        "commitHash": "4a41297665723579b06eac9874e7d93fab558944",
+        "artifacts": {
+          "linux-x64": {
+            "sha256": "f486dca4bb18b8792c2ad6d085e7a0298ffdf762816d67412c772a7b33f5550f",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.9/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-linux-x64-1.0.9.tar.gz"
+          },
+          "win-x64": {
+            "sha256": "b628ac46c0a0186ca12242b3eb0b18ad0cf348a37beb1c4247d71bf7bf092ef4",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.9/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-win-x64-1.0.9.tar.gz"
+          },
+          "win-arm64": {
+            "sha256": "b5cca9d2b56043dc8bdc7d6b120d79ac472e56b93232ce653f115622f5962b2a",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.9/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-win-arm64-1.0.9.tar.gz"
+          },
+          "mac-arm64": {
+            "sha256": "2cca7884043405cef7d846ac7fc81645ab62884f4cd23bccbaabd27e4b00dca7",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.9/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-mac-arm64-1.0.9.tar.gz"
+          },
+          "mac-x64": {
+            "sha256": "e21edc7fef2912f1c33f6a8deb02cd1fe23e7b31b46fb158a437f07999a068d6",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.9/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-mac-x64-1.0.9.tar.gz"
+          },
+          "linux-arm64": {
+            "sha256": "83fe93649caebb0040e4597b37ba203a3fb2a1fbeb3057c8acbaf4aef3c70396",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.9/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-linux-arm64-1.0.9.tar.gz"
+          }
+        }
+      },
+      "dependencies": {
+        "command-exists-promise": "^2.0.2",
+        "node-fetch": "2.6.7",
+        "tar": "^4.4.8",
+        "yauzl": "^2.10.0",
+        "shelljs": "^0.8.4"
+      }
+    },
+    "1.0.16": {
+      "license": "ISC",
+      "bin": {"jdeploy-test-app": "jdeploy-bundle/jdeploy.js"},
+      "name": "jdeploy-test-app",
+      "description": "Test application for jDeploy bundle publishing",
+      "files": ["jdeploy-bundle"],
+      "preferGlobal": true,
+      "source": "https://github.com/shannah/jdeploy-test-app",
+      "version": "1.0.16",
+      "jdeploy": {
+        "jdk": false,
+        "checksums": {},
+        "mainClass": "com.example.testapp.Main",
+        "javaVersion": "11",
+        "gitTag": "v1.0.16",
+        "winAppDir": "AppData\\Local\\Programs",
+        "jar": "target/jdeploy-test-app-1.0.16.jar",
+        "javafx": false,
+        "jdeployVersion": "6.1.1",
+        "title": "jDeploy Test App",
+        "commitHash": "f694e0eaa69210aa8ee6b369d848e74cb30665c3",
+        "artifacts": {
+          "linux-x64": {
+            "sha256": "cf57deb40886741c7c5402e36b1533f867e8d0fdde40488b2bc0b22b6fd8681c",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.16/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-linux-x64-1.0.16.tar.gz"
+          },
+          "win-x64": {
+            "sha256": "7bb9bbcfd749b0e3ab90390a1170ffdd185c2251696fbc662da033d6f8f6ac16",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.16/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-win-x64-1.0.16.tar.gz"
+          },
+          "win-arm64": {
+            "sha256": "19c4bc9ef5a775c83610fbf0bbab0105ac1327f2a111c6078ef53d9612193e42",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.16/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-win-arm64-1.0.16.tar.gz"
+          },
+          "mac-arm64": {
+            "sha256": "f75d65fcab6c32938071856e9e5f97b1fa2c003fde38927fd3bc1a074fc29bf0",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.16/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-mac-arm64-1.0.16.tar.gz"
+          },
+          "mac-x64": {
+            "sha256": "9565e3f09d2e3ce715568b597749e280b712275ab4f78839227a0a923325ed97",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.16/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-mac-x64-1.0.16.tar.gz"
+          },
+          "linux-arm64": {
+            "sha256": "9a29ab3f69f1af65669d1fa807687dd274eb7d8326922b87b189b09383da3fea",
+            "enabled": true,
+            "url": "https://github.com/shannah/jdeploy-test-app/releases/download/v1.0.16/45a56edd0dc59ebf204e67ff3343f44b.jdeploy-test-app-linux-arm64-1.0.16.tar.gz"
+          }
+        }
+      },
+      "dependencies": {
+        "command-exists-promise": "^2.0.2",
+        "node-fetch": "2.6.7",
+        "tar": "^4.4.8",
+        "yauzl": "^2.10.0",
+        "shelljs": "^0.8.4"
+      }
+    },
+    "1.0.0": {
+      "license": "ISC",
+      "bin": {"jdeploy-test-app": "jdeploy-bundle/jdeploy.js"},
+      "name": "jdeploy-test-app",
+      "description": "Test application for jDeploy publishing",
+      "files": ["jdeploy-bundle"],
+      "preferGlobal": true,
+      "source": "https://github.com/shannah/jdeploy-test-app",
+      "version": "1.0.0",
+      "jdeploy": {
+        "jdk": false,
+        "checksums": {},
+        "mainClass": "com.example.testapp.Main",
+        "javaVersion": "11",
+        "gitTag": "v1.0.0",
+        "jar": "target/jdeploy-test-app-1.0.0.jar",
+        "javafx": false,
+        "jdeployVersion": "6.0.19",
+        "title": "jDeploy Test App",
+        "commitHash": "e7641d5b94cb95643f8d2f307e08f26ce5e04649"
+      },
+      "dependencies": {
+        "command-exists-promise": "^2.0.2",
+        "node-fetch": "2.6.7",
+        "tar": "^4.4.8",
+        "yauzl": "^2.10.0",
+        "shelljs": "^0.8.4"
+      }
+    },
+    "1.0.17": {
+      "license": "ISC",
+      "bin": {"jdeploy-test-app": "jdeploy-bundle/jdeploy.js"},
+      "name": "jdeploy-test-app",
+      "description": "Test application for jDeploy publishing",
+      "files": ["jdeploy-bundle"],
+      "preferGlobal": true,
+      "source": "https://github.com/shannah/jdeploy-test-app",
+      "version": "1.0.17",
+      "jdeploy": {
+        "jdk": false,
+        "checksums": {},
+        "mainClass": "com.example.testapp.Main",
+        "javaVersion": "11",
+        "gitTag": "v1.0.17",
+        "jar": "target/jdeploy-test-app-1.0.17.jar",
+        "javafx": false,
+        "jdeployVersion": "6.1.2-dev.0",
+        "title": "jDeploy Test App",
+        "commitHash": "fbffd2be0fd80159e2b0c3ed10515c5963cc2fd0"
+      },
+      "dependencies": {
+        "command-exists-promise": "^2.0.2",
+        "node-fetch": "2.6.7",
+        "tar": "^4.4.8",
+        "yauzl": "^2.10.0",
+        "shelljs": "^0.8.4"
+      }
+    },
+    "1.0.1": {
+      "license": "ISC",
+      "bin": {"jdeploy-test-app": "jdeploy-bundle/jdeploy.js"},
+      "name": "jdeploy-test-app",
+      "description": "Test application for jDeploy publishing",
+      "files": ["jdeploy-bundle"],
+      "preferGlobal": true,
+      "source": "https://github.com/shannah/jdeploy-test-app",
+      "version": "1.0.1",
+      "jdeploy": {
+        "jdk": false,
+        "checksums": {},
+        "mainClass": "com.example.testapp.Main",
+        "javaVersion": "11",
+        "gitTag": "v1.0.1",
+        "jar": "target/jdeploy-test-app-1.0.1.jar",
+        "javafx": false,
+        "jdeployVersion": "6.1.0-dev.4",
+        "title": "jDeploy Test App",
+        "commitHash": "2e604135515626c526eb8ae6bc8b1a2712f4c609"
+      },
+      "dependencies": {
+        "command-exists-promise": "^2.0.2",
+        "node-fetch": "2.6.7",
+        "tar": "^4.4.8",
+        "yauzl": "^2.10.0",
+        "shelljs": "^0.8.4"
+      }
+    },
+    "1.0.18": {
+      "license": "ISC",
+      "bin": {"jdeploy-test-app": "jdeploy-bundle/jdeploy.js"},
+      "name": "jdeploy-test-app",
+      "description": "Test application for jDeploy publishing",
+      "files": ["jdeploy-bundle"],
+      "preferGlobal": true,
+      "source": "https://github.com/shannah/jdeploy-test-app",
+      "version": "1.0.18",
+      "jdeploy": {
+        "jdk": false,
+        "checksums": {},
+        "mainClass": "com.example.testapp.Main",
+        "javaVersion": "11",
+        "gitTag": "v1.0.18",
+        "jar": "target/jdeploy-test-app-1.0.18.jar",
+        "javafx": false,
+        "jdeployVersion": "6.1.2-dev.1",
+        "title": "jDeploy Test App",
+        "commitHash": "48eac5af4e841b83b978f1952dfd7d972f65abf9"
+      },
+      "dependencies": {
+        "command-exists-promise": "^2.0.2",
+        "node-fetch": "2.6.7",
+        "tar": "^4.4.8",
+        "yauzl": "^2.10.0",
+        "shelljs": "^0.8.4"
+      }
+    },
+    "1.0.2": {
+      "license": "ISC",
+      "bin": {"jdeploy-test-app": "jdeploy-bundle/jdeploy.js"},
+      "name": "jdeploy-test-app",
+      "description": "Test application for jDeploy bundle publishing",
+      "files": ["jdeploy-bundle"],
+      "preferGlobal": true,
+      "source": "https://github.com/shannah/jdeploy-test-app",
+      "version": "1.0.2",
+      "jdeploy": {
+        "jdk": false,
+        "checksums": {},
+        "mainClass": "com.example.testapp.Main",
+        "javaVersion": "11",
+        "gitTag": "v1.0.2",
+        "jar": "target/jdeploy-test-app-1.0.2.jar",
+        "javafx": false,
+        "jdeployVersion": "6.1.0-dev.5",
+        "title": "jDeploy Test App",
+        "commitHash": "f7582da3a2c153ee3c5e7e8de3f85e468659e184",
+        "artifacts": {
+          "linux-x64": {"enabled": true},
+          "win-x64": {"enabled": true},
+          "win-arm64": {"enabled": true},
+          "mac-arm64": {"enabled": true},
+          "mac-x64": {"enabled": true},
+          "linux-arm64": {"enabled": true}
+        }
+      },
+      "dependencies": {
+        "command-exists-promise": "^2.0.2",
+        "node-fetch": "2.6.7",
+        "tar": "^4.4.8",
+        "yauzl": "^2.10.0",
+        "shelljs": "^0.8.4"
+      }
+    },
+    "1.0.19": {
+      "license": "ISC",
+      "bin": {"jdeploy-test-app": "jdeploy-bundle/jdeploy.js"},
+      "name": "jdeploy-test-app",
+      "description": "Test application for jDeploy publishing",
+      "files": ["jdeploy-bundle"],
+      "preferGlobal": true,
+      "source": "https://github.com/shannah/jdeploy-test-app",
+      "version": "1.0.19",
+      "jdeploy": {
+        "jdk": false,
+        "checksums": {},
+        "mainClass": "com.example.testapp.Main",
+        "javaVersion": "11",
+        "gitTag": "v1.0.19",
+        "jar": "target/jdeploy-test-app-1.0.19.jar",
+        "javafx": false,
+        "jdeployVersion": "6.1.2-dev.2",
+        "title": "jDeploy Test App",
+        "commitHash": "56d4ab3519c7f6d90630b5548b5187e4151ec6a1"
+      },
+      "dependencies": {
+        "command-exists-promise": "^2.0.2",
+        "node-fetch": "2.6.7",
+        "tar": "^4.4.8",
+        "yauzl": "^2.10.0",
+        "shelljs": "^0.8.4"
+      }
+    }
+  },
+  "dist-tags": {"latest": "1.0.20"},
+  "name": "jdeploy-test-app",
+  "time": {
+    "1.0.13": "2026-03-15T15:53:51.556+0000",
+    "1.0.14": "2026-03-15T16:00:32.619+0000",
+    "1.0.15": "2026-03-15T16:11:43.539+0000",
+    "1.0.20": "2026-06-05T09:37:34.950-0700",
+    "created": "2026-03-14T13:35:46.935+0000",
+    "1.0.10": "2026-03-15T14:57:04.598+0000",
+    "1.0.11": "2026-03-15T15:33:42.252+0000",
+    "1.0.3": "2026-03-14T15:32:27.474+0000",
+    "1.0.4": "2026-03-14T17:38:45.832+0000",
+    "1.0.5": "2026-03-14T18:26:19.205+0000",
+    "1.0.6": "2026-03-14T18:58:40.851+0000",
+    "1.0.7": "2026-03-14T20:39:42.681+0000",
+    "1.0.8": "2026-03-15T13:33:58.069+0000",
+    "1.0.9": "2026-03-15T14:36:49.364+0000",
+    "modified": "2026-06-05T09:37:34.950-0700",
+    "1.0.16": "2026-03-19T03:21:00.113+0000",
+    "1.0.0": "2026-03-14T13:35:46.936+0000",
+    "1.0.17": "2026-03-26T14:17:04.226+0000",
+    "1.0.1": "2026-03-14T13:49:09.912+0000",
+    "1.0.18": "2026-03-26T20:12:30.446+0000",
+    "1.0.2": "2026-03-14T14:25:55.511+0000",
+    "1.0.19": "2026-03-27T13:51:11.483+0000"
+  },
+  "_id": "jdeploy-test-app",
+  "commit-hashes": {
+    "1.0.13": "173a2c5637b170013b584072568f64cc856ebc38",
+    "1.0.14": "8ccd09237e7c8bd65efcc6f9ce1c95407e4aee8b",
+    "1.0.15": "e5c93302e2a86159d4ee2056abb1833627d30c26",
+    "1.0.10": "e1f77ddf373a8064013a049cd8a7a8ddde22849d",
+    "1.0.11": "58642fe328f5193a9a4c4c004956cb2a353811b2",
+    "1.0.3": "7abd26af3ed3b4202bb3e4b6258073650b064e3c",
+    "1.0.4": "bdba3e0c2f55f117a945175c7b9f523311ddb76a",
+    "1.0.5": "7ca0eafd3f8776c0f578690b17c93a3859c888ae",
+    "1.0.6": "3b8d8270b3aa7f63baf67bdc7f0634aa95a6b942",
+    "1.0.7": "dfafb7e90712201b11382af00b5f9275cc6ddc5a",
+    "1.0.8": "558406142fb7ab5adb4cc597201f3a066c9ceff1",
+    "1.0.9": "4a41297665723579b06eac9874e7d93fab558944",
+    "1.0.16": "f694e0eaa69210aa8ee6b369d848e74cb30665c3",
+    "1.0.0": "e7641d5b94cb95643f8d2f307e08f26ce5e04649",
+    "1.0.17": "fbffd2be0fd80159e2b0c3ed10515c5963cc2fd0",
+    "1.0.1": "2e604135515626c526eb8ae6bc8b1a2712f4c609",
+    "1.0.18": "48eac5af4e841b83b978f1952dfd7d972f65abf9",
+    "1.0.2": "f7582da3a2c153ee3c5e7e8de3f85e468659e184",
+    "1.0.19": "56d4ab3519c7f6d90630b5548b5187e4151ec6a1"
+  },
+  "git-tags": {
+    "1.0.13": "v1.0.13",
+    "1.0.14": "v1.0.14",
+    "1.0.15": "v1.0.15",
+    "1.0.10": "v1.0.10",
+    "1.0.11": "v1.0.11",
+    "1.0.3": "v1.0.3",
+    "1.0.4": "v1.0.4",
+    "1.0.5": "v1.0.5",
+    "1.0.6": "v1.0.6",
+    "1.0.7": "v1.0.7",
+    "1.0.8": "v1.0.8",
+    "1.0.9": "v1.0.9",
+    "1.0.16": "v1.0.16",
+    "1.0.0": "v1.0.0",
+    "1.0.17": "v1.0.17",
+    "1.0.1": "v1.0.1",
+    "1.0.18": "v1.0.18",
+    "1.0.2": "v1.0.2",
+    "1.0.19": "v1.0.19"
+  }
+}

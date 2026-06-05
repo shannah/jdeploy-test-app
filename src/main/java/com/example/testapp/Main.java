@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class Main {
 
-    private static final String VERSION = "1.0.20";
+    private static final String VERSION = "1.0.21";
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
